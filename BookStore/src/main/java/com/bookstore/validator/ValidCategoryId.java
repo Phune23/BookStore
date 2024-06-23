@@ -11,7 +11,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 @Target({TYPE, FIELD})
 @Retention(RUNTIME)
-@Constraint(validatedBy = ValidCategoryValidator.class)
+@Constraint(validatedBy = ValidCategoryIdValidator.class)
 public @interface ValidCategoryId {
     String message() default "Danh mục không hợp lệ";
     Class<?>[] groups() default {};

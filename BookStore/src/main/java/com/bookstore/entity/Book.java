@@ -1,7 +1,6 @@
 package com.bookstore.entity;
 
 import com.bookstore.validator.ValidCategoryId;
-import com.bookstore.validator.ValidUserId;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.Data;
@@ -35,6 +34,5 @@ public class Book {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    @ValidUserId
     private User user;
 }
